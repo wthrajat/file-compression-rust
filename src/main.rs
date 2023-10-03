@@ -6,7 +6,7 @@ use::std::env::args;
 use::std::fs::File;
 use::std::io::copy;
 use::std::io::BufReader;
-use::std::time::Instant; // For showing time elapsed
+use::std::time::Instant;
 
 fn main() {
     if args().len() != 3 {
@@ -25,6 +25,5 @@ fn main() {
     println!(
         "Target File Size -> {:?}", output.metadata().unwrap().len()
     );
-    // For elapsed time
     println!("Elapsed Time -> {:?}", start.elapsed());
 }
