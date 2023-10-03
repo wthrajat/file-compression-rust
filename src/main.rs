@@ -20,11 +20,11 @@ fn main() {
     copy(&mut input, &mut encoder).unwrap();
     let output = encoder.finish().unwrap();
     println!(
-        "Source length -> {:?}", input.get_ref().metadata().unwrap().len()
+        "Source File Size -> {:?}", input.get_ref().metadata().unwrap().len()
     );
     println!(
-        "Target length -> {:?}", output.metadata().unwrap().len()
+        "Target File Size -> {:?}", output.metadata().unwrap().len()
     );
     // For elapsed time
-    println!("Elapsed time -> {:?}", start.elapsed());
+    println!("Elapsed Time -> {:?}", start.elapsed());
 }
